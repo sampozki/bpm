@@ -48,9 +48,10 @@
 			  }
 
 				count++;
-				bpm = 1/(((Date.now()-startTime)/60000)/(count));
+				bpm = 1/(((Date.now()-startTime)/60000)/(count-1));
 				if (count > 1) {
 					document.getElementById("tap").innerHTML = (Math.round(bpm)).toString();
+					document.getElementById("tap").style.animationDuration = (1/bpm*60).toString()+'s';
 				}
 			}
 

@@ -17,6 +17,7 @@ h2{
 	color:var(--sccolor);
 	line-height:0;
 	text-shadow: var(--sccolor) 0 0 10px;
+	animation: blinker 0s linear infinite;
 
 }
 
@@ -70,7 +71,7 @@ input:focus {
 #tap{
 	position:absolute;
 	left: 0; right:0;
-	bottom:20%;
+	bottom:25%;
 }
 
 #reset{
@@ -91,4 +92,11 @@ hr{
 	border-top: 1px solid var(--sccolor);
 	transform:translate(0,-50%);
 	opacity:0.3;
+}
+
+@keyframes blinker {
+  0% { opacity: 0;}
+  40% { opacity: 1;}
+  100% { opacity: 1;}
+
 }
