@@ -18,7 +18,6 @@ h2{
 	line-height:0;
 	text-shadow: var(--sccolor) 0 0 10px;
 	animation: blinker 0s linear infinite;
-
 }
 
 .content {
