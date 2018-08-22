@@ -6,6 +6,7 @@
 		<meta name="keywords" content="BPM, beats per minute">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="theme-color" content="#EEEEEE">
 
 		<title>BPM</title>
 
@@ -20,6 +21,7 @@
 
 		let index = Math.floor(Math.random() * bgcolor.length);
 
+		document.getElementsByTagName('meta')["theme-color"].content = bgcolor[index];
 		document.documentElement.style.setProperty("--bgcolor", bgcolor[index]);
 		document.documentElement.style.setProperty("--sccolor", sccolor[index]);
 
